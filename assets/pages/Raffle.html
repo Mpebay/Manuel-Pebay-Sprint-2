@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title> Raffle - SNOWY CREAM</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="../../index.html">Home</a>
+            <a href="./assets/pages/aboutUs.html">About</a>
+            <a href="./assets/pages/contact.html">Contact</a>
+            <a href="./assets/pages/information.html">Information</a>
+            <a href="./assets/pages/benefitsTips.html">Benefits and Tips</a>
+            <a href="#">Raffle</a>
+        </div>
+        <img src="../image/logo.png" alt="logo de la empresa">
+    </nav>
+    <header>
+        <h2>Raffle</h2>
+        <h3>You can collaborate so that we expand the business and by doing so you will be participating in the raffle for a box of traditional ice creams</h3>
+
+    </header>
+
+    <main class="main-raffle">
+        <div class="mapa">
+            <p>Our location is located at:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d846587.009553161!2d-119.07264540876056!3d34.01871132981094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1689789768577!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="formulario">
+            
+                <form action="./show_data.html" method="get" target="_blank">
+                    <label for="primer-nombre">First Name</label>
+                    <input type="text" name="primer-nombre" id="primer-nombre" placeholder="Ej:Pablo" >
+                    
+                    <label for="apellido">Last Name</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ej:Fernandez" value="">
+                    
+                    <label for="plataforma">Choose Meet or Zoom</label>
+                    <select name="plataf-selec" id="plataforma">
+                        <option value="">Select a opcion</option>
+                        <option value="meet">Meet</option>
+                        <option value="zoom">Zoom</option>
+                    </select>
+
+                    <label for="fecha">Choose Date</label>
+                    <input type="date" name="fecha" id="fecha" value="">
+
+                    <legend>Payment Options</legend>
+                    
+                    <label for="Cash">Cash</label>
+                    <input type="radio" id="Cash" name="form-pago" value="Cash">
+                    <label for="Credit">Credit Card</label>
+                    <input type="radio" id="Credit" name="form-pago" value="Credit-Card">
+                    <label for="Debit">Debit Card</label>
+                    <input type="radio" id="Debit" name="form-pago" value="Debit Card">
+                    
+                    <input type="submit" value="Send">
+                </form>
+                
+                
+        </div>
+        
+    </main>
+
+
+    <footer>
+        
+        <p>Created by : Manuel Pebay</p>
+
+    </footer>
+</body>
+</html>

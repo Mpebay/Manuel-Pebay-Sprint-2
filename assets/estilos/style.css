@@ -226,3 +226,31 @@ table {
     align-items: center;
     margin-left: 3rem;
 }
+
+.main-raffle{
+    display: flex;
+
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 3rem;
+    margin-left: 0;
+}
+
+.mapa iframe{
+    width: 20rem;
+    height: 20rem;
+}
+
+.mapa p{
+    color: rgb(75, 75, 141);
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+}
