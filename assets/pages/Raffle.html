@@ -11,69 +11,101 @@
 
 <body>
     <nav>
-        <div>
+        <div class="anchors">
             <a href="../../index.html">Home</a>
-            <a href="./assets/pages/aboutUs.html">About</a>
-            <a href="./assets/pages/contact.html">Contact</a>
-            <a href="./assets/pages/information.html">Information</a>
-            <a href="./assets/pages/benefitsTips.html">Benefits and Tips</a>
+            <a href="./aboutUs.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./information.html">Information</a>
+            <a href="./benefitsTips.html">Benefits and Tips</a>
             <a href="#">Raffle</a>
         </div>
-        <img src="../image/logo.png" alt="logo de la empresa">
+            <img class="logo" src="../image/logo.png" alt="logo de la empresa">
     </nav>
     <header>
         <h2>Raffle</h2>
-        <h3>You can collaborate so that we expand the business and by doing so you will be participating in the raffle for a box of traditional ice creams</h3>
+        <h3>You can collaborate so that we expand the business and by doing so you will be participating in the raffle
+            for a box of traditional ice creams</h3>
 
     </header>
 
     <main class="main-raffle">
         <div class="mapa">
             <p>Our location is located at:</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d846587.009553161!2d-119.07264540876056!3d34.01871132981094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1689789768577!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d846587.009553161!2d-119.07264540876056!3d34.01871132981094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1689789768577!5m2!1ses!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="formulario">
-            
-                <form action="./show_data.html" method="get" target="_blank">
+
+            <form action="./show_data.html" method="get" target="_blank">
+                <div class="nombre">
                     <label for="primer-nombre">First Name</label>
-                    <input type="text" name="primer-nombre" id="primer-nombre" placeholder="Ej:Pablo" >
-                    
+                    <input type="text" name="primer-nombre" id="primer-nombre" placeholder="Ej:Pablo">
+                </div>
+                <div class="apellido">
                     <label for="apellido">Last Name</label>
                     <input type="text" name="apellido" id="apellido" placeholder="Ej:Fernandez" value="">
-                    
+                </div>
+                <div class="plataforma">
                     <label for="plataforma">Choose Meet or Zoom</label>
                     <select name="plataf-selec" id="plataforma">
-                        <option value="">Select a opcion</option>
+                        <option value="">Select a option</option>
                         <option value="meet">Meet</option>
                         <option value="zoom">Zoom</option>
                     </select>
-
+                </div>
+                <div class="select-fecha">
                     <label for="fecha">Choose Date</label>
-                    <input type="date" name="fecha" id="fecha" value="">
+                    <select name="fecha" id="fecha">
+                        <option value="">Select a option</option>
+                        <option value="lunes 2pm">20/10 - 2:00 PM</option>
+                        <option value="martes 4pm">27/10 - 4:00 PM</option>
+                        <option value="miercoles 10am">21/11 - 10:00 AM</option>
+                    </select>
+                </div>
 
+                <div class="forma-pago">
                     <legend>Payment Options</legend>
-                    
-                    <label for="Cash">Cash</label>
-                    <input type="radio" id="Cash" name="form-pago" value="Cash">
-                    <label for="Credit">Credit Card</label>
-                    <input type="radio" id="Credit" name="form-pago" value="Credit-Card">
-                    <label for="Debit">Debit Card</label>
-                    <input type="radio" id="Debit" name="form-pago" value="Debit Card">
-                    
+
+                    <div>
+                        <input type="radio" id="Cash" name="form-pago" value="Cash">
+                        <label for="Cash">Cash</label>
+                    </div>
+                    <div><input type="radio" id="Credit" name="form-pago" value="Credit-Card">
+                        <label for="Credit">Credit Card</label>
+                    </div>
+                    <div><input type="radio" id="Debit" name="form-pago" value="Debit Card">
+                        <label for="Debit">Debit Card</label>
+                    </div>
+                </div>
+
+                <div class="mensaje-opcional">
+                    <label for="msj">Message (Optional)</label>
+                    <input class="texto" type="text" id="msj" name="mensaje-opcional" value="">
+                </div>
+
+                <div class="tyc">
+                    <input type="checkbox" id="aceptar">
+                    <label for="aceptar">I accept terms and conditions...</label>
                     <input type="submit" value="Send">
-                </form>
-                
-                
+                </div>
+
+
+            </form>
+
+
         </div>
-        
+
     </main>
 
 
     <footer>
-        
+
         <p>Created by : Manuel Pebay</p>
 
     </footer>
 </body>
+
 </html>
